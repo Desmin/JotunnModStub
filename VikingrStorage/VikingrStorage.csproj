@@ -7,8 +7,8 @@
     <ProjectGuid>{DEAF4438-8089-40ED-8175-398E1261D45B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JotunnModStub</RootNamespace>
-    <AssemblyName>JotunnModStub</AssemblyName>
+    <RootNamespace>VikingrStorage</RootNamespace>
+    <AssemblyName>VikingrStorage</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -82,7 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\IgnoreAccessModifiers.cs" />
-    <Compile Include="JotunnModStub.cs" />
+    <Compile Include="VikingrStoragePlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -92,6 +92,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Package\plugins\" />
+    <Folder Include="Patches\" />
+    <Folder Include="UI\" />
+    <Folder Include="Util\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Package\manifest.json" />
@@ -111,7 +114,7 @@
   </PropertyGroup>
   <Target Name="EnsureEnvironmentPropsImport" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
-      <ErrorText>This project needs a Environment.props file with the path to your Valheim installation. See https://github.com/Valheim-Modding/JotunnModStub. {0} is missing.</ErrorText>
+      <ErrorText>This project needs a Environment.props file with the path to your Valheim installation. See https://github.com/Valheim-Modding/VikingrStorage. {0} is missing.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('$(SolutionDir)Environment.props')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)Environment.props'))" />
   </Target>
