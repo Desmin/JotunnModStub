@@ -82,6 +82,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\IgnoreAccessModifiers.cs" />
+    <Compile Include="Util\ContainerCache.cs" />
+    <Compile Include="Util\ContainerUtils.cs" />
     <Compile Include="VikingrStoragePlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -94,7 +96,6 @@
     <Folder Include="Package\plugins\" />
     <Folder Include="Patches\" />
     <Folder Include="UI\" />
-    <Folder Include="Util\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Package\manifest.json" />
