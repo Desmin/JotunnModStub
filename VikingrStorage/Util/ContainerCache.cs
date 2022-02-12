@@ -8,16 +8,17 @@ namespace VikingrStorage.Util
 {
     public class ContainerCache
     {
-        private List<Container> Containers { get; set; }
+        private SortedList<string, List<Container>> Containers { get; set; }
 
         public ContainerCache()
         {
             Containers = InitializeCache();
         }
 
-        private List<Container> InitializeCache()
+        private SortedList<string, List<Container>> InitializeCache()
         {
             return null;
         }
+
     }
 }

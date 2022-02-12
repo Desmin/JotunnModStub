@@ -84,6 +84,8 @@
     <Compile Include="Properties\IgnoreAccessModifiers.cs" />
     <Compile Include="Util\ContainerCache.cs" />
     <Compile Include="Util\ContainerUtils.cs" />
+    <Compile Include="VikingrChest\Repository.cs" />
+    <Compile Include="VikingrChest\VikingrChest.cs" />
     <Compile Include="VikingrStoragePlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
